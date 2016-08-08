@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+	{% include header.html %}
+
+	<div class="content-wrapper">
+		{% assign items = site.content | sort: 'date' %}
+		{% for post in site.content reversed %}
+		<a href="{{post.url}}" class="post" style="background-image: url({{post.landingImage}})">
+		  <div class="post-overlay">
+				<div class="post-text">
+					<div class="title text-item">{{post.title}}</div>
+					<div class="location text-item">{{post.location}}</div>
+				</div>
+		  </div>
+		</a>
+		{% endfor %}
+	</div>
+
+	{% include footer.html %}
+</body>
+</html>

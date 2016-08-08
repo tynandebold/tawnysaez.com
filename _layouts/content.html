@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+	{% include header.html %}
+  <div class="main-content">
+
+		{% if page.fullImageType == 'vertical' %}
+			<div class="vertical-img">
+		{% else %}
+			<div class="horizontal-img">
+		{% endif %}
+		<img src="{{page.fullImage}}" alt="">
+		</div>
+
+    <div class="writing">
+			{% if page.title != 'About' %}
+				<div class="splitter"></div>
+				<div class="page-title">{{page.title}}</div>
+				<div class="page-location">{{page.location}}</div>
+			{% endif %}
+      {{content}}
+    </div>
+  </div>
+  {% include footer.html %}
+</body>
+</html>
