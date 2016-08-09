@@ -16,7 +16,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 5% 2px 2.5%;
+  margin: 50px 2px 25px;
   transition: all .3s ease-out;
 
   @include breakpoint(medium) {
@@ -73,40 +73,104 @@ header {
   }
 }
 
-/* index page grid styles */
+/* index page shared styles */
+.section-title {
+  margin: 0 2px;
+  padding: 15px 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .line {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background-color: #aaa;
+  }
+}
+
+/* index page featured-section styles */
+.featured-posts-wrapper {
+  display: flex;
+  flex: 1 0 auto;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+
+  .post-wrapper {
+    width: 33.3%;
+    height: auto;
+    position: relative;
+    padding: 2px;
+
+    @include breakpoint(small) {
+      width: 100%;
+    }
+
+    .post {
+      width: 100%;
+      border: 2px solid #fff;
+      display: flex;
+      background-size: contain;
+
+      &:after {
+        content: '';
+        padding-top: 100%;
+      }
+    }
+
+    .post-text {
+      text-align: center;
+
+      .title {
+        border-bottom: 1px solid #fff;
+        color: $black;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 10px;
+        text-decoration: none;
+        transition: all .2s ease-out;
+
+        &:hover {
+          border-bottom: 1px solid $black;
+          cursor: pointer;
+        }
+      }
+
+      .location {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 17px;
+        margin: 0 auto;
+        width: 80%;
+
+        p:first-child {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* index page all-posts styles */
 .all-posts-wrapper {
   display: flex;
   flex: 1 0 auto;
   flex-flow: row wrap;
-
-  .section-title {
-    margin: 0 2px;
-    padding: 12px 0;
-    position: relative;
-    text-align: center;
-    width: 100%;
-
-    h2 {
-      font-size: 18px;
-      font-weight: 500;
-      background-color: #fff;
-      display: inline-block;
-      position: relative;
-      padding: 0 10px;
-      margin: 0;
-      z-index: 1;
-    }
-
-    .line {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 50%;
-      height: 1px;
-      background-color: #aaa;
-    }
-  }
 
   .post {
     width: 25%;
@@ -117,7 +181,6 @@ header {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background-position: center 35%;
     background-size: contain;
 
     @include breakpoint(medium) {
