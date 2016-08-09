@@ -5,7 +5,11 @@
 <body>
 	{% include header.html %}
 
-	<div class="content-wrapper">
+	<div class="all-posts-wrapper">
+		<div class="section-title">
+			<h2>All Posts</h2>
+			<div class="line"></div>
+		</div>
 		{% assign items = site.content | sort: 'date' %}
 		{% for post in site.content reversed %}
 		<a href="{{post.url}}" class="post" style="background-image: url({{post.landingImage}})">
