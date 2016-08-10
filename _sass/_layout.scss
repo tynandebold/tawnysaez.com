@@ -16,7 +16,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 50px 2px 25px;
+  margin: 50px 2px 5px;
   transition: all .3s ease-out;
 
   @include breakpoint(medium) {
@@ -75,20 +75,23 @@ header {
 
 /* index page shared styles */
 .section-title {
-  margin: 0 2px;
-  padding: 15px 0;
+  margin: 0 2px -21px;
+  padding: 10px 0;
   position: relative;
   text-align: center;
   width: 100%;
 
   h2 {
-    font-size: 18px;
-    font-weight: 500;
     background-color: #fff;
+    border: 1px solid #aaa;
     display: inline-block;
-    position: relative;
-    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
     margin: 0;
+    position: relative;
+    padding: 5px 10px;
+    text-transform: uppercase;
     z-index: 1;
   }
 
@@ -108,27 +111,33 @@ header {
   display: flex;
   flex: 1 0 auto;
   flex-flow: row wrap;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  margin-bottom: 45px;
+
+  @include breakpoint(small) {
+    margin-bottom: 0;
+  }
 
   .post-wrapper {
-    width: 33.3%;
+    border: 2px solid #fff;
     height: auto;
     position: relative;
-    padding: 2px;
+    width: 32.5%;
 
     @include breakpoint(small) {
       width: 100%;
+      margin-bottom: 15px;
     }
 
     .post {
       width: 100%;
-      border: 2px solid #fff;
       display: flex;
-      background-size: contain;
+      background-size: cover;
+      background-position: center center;
 
       &:after {
         content: '';
-        padding-top: 100%;
+        padding-top: 75%;
       }
     }
 
@@ -159,7 +168,7 @@ header {
         width: 80%;
 
         p:first-child {
-          margin-top: 5px;
+          margin-top: 6px;
         }
       }
     }
