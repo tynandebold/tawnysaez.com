@@ -32,7 +32,7 @@ header {
   }
 
   h1 > a {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $white;
     color: $black;
     letter-spacing: 0.5px;
     font-size: 32px;
@@ -53,56 +53,14 @@ header {
     padding-left: 4px;
   }
 
-  .dropdown-wrapper {
-    display: inline-block;
-
-    .dropdown-menu,
-    .dropdown-menu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .dropdown-menu li {
-      position: relative;
-    }
-
-    .dropdown-menu > li > ul {
-      background-color: #fff;
-      border-radius: 0 0 2px 2px;
-      display: none;
-      left: -5px;
-      opacity: 0.95;
-      position: absolute;
-      width: 80px;
-      z-index: 50;
-    }
-
-    .dropdown-menu > li > ul > li {
-      margin: 13px 5px;
-    }
-
-    .dropdown-menu > li > ul > li > a {
-      border-bottom: 1px solid #fff;
-      color: $black;
-      font-size: 13px;
-      padding-bottom: 2px;
-      text-decoration: none;
-
-      &:hover {
-        border-bottom: 1px solid $black;
-        cursor: pointer;
-      }
-    }
-  }
-
-  #dropdown-title,
   #about-link {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $white;
     color: $black;
+    display: inline-block;
     letter-spacing: 0.5px;
     font-size: 13px;
     font-weight: 700;
+    margin-top: 18px;
     padding-bottom: 3px;
     text-transform: uppercase;
     text-decoration: none;
@@ -113,12 +71,6 @@ header {
       border-bottom: 1px solid $black;
       cursor: pointer;
     }
-  }
-
-  #about-link {
-    margin-top: 18px;
-    margin-left: 20px;
-    display: inline-block;
   }
 }
 
@@ -131,8 +83,8 @@ header {
   width: 100%;
 
   h2 {
-    background-color: #fff;
-    border: 1px solid #aaa;
+    background-color: $white;
+    border: 1px solid $light-grey;
     display: inline-block;
     font-size: 16px;
     font-weight: 500;
@@ -151,7 +103,7 @@ header {
     right: 0;
     top: 50%;
     height: 1px;
-    background-color: #aaa;
+    background-color: $light-grey;
   }
 }
 
@@ -168,7 +120,7 @@ header {
   }
 
   .post-wrapper {
-    border: 2px solid #fff;
+    border: 2px solid $white;
     height: auto;
     position: relative;
     width: 32.5%;
@@ -194,7 +146,7 @@ header {
       text-align: center;
 
       .title {
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid $white;
         color: $black;
         display: inline-block;
         font-size: 16px;
@@ -231,49 +183,11 @@ header {
   flex-flow: row wrap;
   position: relative;
 
-  #filter-wrapper {
-    position: absolute;
-    top: 20px;
-    right: -80px;
-
-    #filter-title {
-      letter-spacing: 0.5px;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .filter-city {
-      margin-bottom: 8px;
-    }
-
-    .filter-city a {
-      border-bottom: 1px solid #fff;
-      color: $black;
-      font-weight: 300;
-      padding-bottom: 2px;
-      text-decoration: none;
-      transition: all .2s ease-out;
-
-      &:hover {
-        border-bottom: 1px solid $black;
-        cursor: pointer;
-      }
-
-      &.active {
-        border-bottom: 1px solid #60adaf;
-        color: #60adaf;
-        font-weight: 400;
-      }
-    }
-  }
-
   .post {
     width: 25%;
     height: 100%;
     position: relative;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,7 +213,7 @@ header {
       bottom: 0;
       left: 0;
       opacity: 0;
-      background-color: #fff;
+      background-color: $white;
       transition: opacity .3s ease-out;
 
       @include breakpoint(medium) {
@@ -397,7 +311,7 @@ header {
       display: block;
       margin: 15px 0;
       padding-top: 0;
-      background-color: #555;
+      background-color: $dark-grey;
       border: 0;
       height: 2px;
     }
@@ -415,12 +329,15 @@ header {
     }
 
     a {
+      border-bottom: 1px solid $white;
       color: #60adaf;
+      padding-bottom: 2px;
       text-decoration: none;
       transition: all .2s ease-out;
 
       &:hover {
         color: #a94139;
+        border-bottom: 1px solid #a94139;
       }
     }
   }
