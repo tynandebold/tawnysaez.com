@@ -46,14 +46,58 @@ header {
     }
   }
 
-  .desc {
+  #desc {
     display: inline-block;
     font-size: 16px;
     font-weight: 300;
     padding-left: 4px;
   }
 
-  .about-link {
+  .dropdown-wrapper {
+    display: inline-block;
+
+    .dropdown-menu,
+    .dropdown-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dropdown-menu li {
+      position: relative;
+    }
+
+    .dropdown-menu > li > ul {
+      background-color: #fff;
+      border-radius: 0 0 2px 2px;
+      display: none;
+      left: -5px;
+      opacity: 0.95;
+      position: absolute;
+      width: 80px;
+      z-index: 50;
+    }
+
+    .dropdown-menu > li > ul > li {
+      margin: 13px 5px;
+    }
+
+    .dropdown-menu > li > ul > li > a {
+      border-bottom: 1px solid #fff;
+      color: $black;
+      font-size: 13px;
+      padding-bottom: 2px;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: 1px solid $black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #dropdown-title,
+  #about-link {
     border-bottom: 1px solid #fff;
     color: $black;
     letter-spacing: 0.5px;
@@ -63,13 +107,18 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     transition: all .2s ease-out;
-    margin-top: 18px;
-    display: block;
+    z-index: 999;
 
     &:hover {
       border-bottom: 1px solid $black;
       cursor: pointer;
     }
+  }
+
+  #about-link {
+    margin-top: 18px;
+    margin-left: 20px;
+    display: inline-block;
   }
 }
 
@@ -109,7 +158,7 @@ header {
 /* index page featured-section styles */
 .featured-posts-wrapper {
   display: flex;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 45px;
@@ -178,12 +227,51 @@ header {
 /* index page all-posts styles */
 .all-posts-wrapper {
   display: flex;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   flex-flow: row wrap;
+  position: relative;
+
+  #filter-wrapper {
+    position: absolute;
+    top: 20px;
+    right: -80px;
+
+    #filter-title {
+      letter-spacing: 0.5px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .filter-city {
+      margin-bottom: 8px;
+    }
+
+    .filter-city a {
+      border-bottom: 1px solid #fff;
+      color: $black;
+      font-weight: 300;
+      padding-bottom: 2px;
+      text-decoration: none;
+      transition: all .2s ease-out;
+
+      &:hover {
+        border-bottom: 1px solid $black;
+        cursor: pointer;
+      }
+
+      &.active {
+        border-bottom: 1px solid #60adaf;
+        color: #60adaf;
+        font-weight: 400;
+      }
+    }
+  }
 
   .post {
     width: 25%;
-    height: auto;
+    height: 100%;
     position: relative;
     border: 2px solid #fff;
     display: flex;
@@ -282,6 +370,12 @@ header {
     float: right;
     margin: 15px 0 30px 30px;
     width: 70%;
+
+    @include breakpoint(small) {
+      float: none;
+      margin: 0;
+      width: 100%;
+    }
   }
 
   img {

@@ -5,7 +5,6 @@ location: 'New York'
 landingImage: https://tawnysaez.files.wordpress.com/2016/08/img_3600.jpg?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2016/08/img_3600.jpg?w=1000
 fullImageType: vertical
-featuredPost: true
 date: 2016-08-07 00:00:00
 ---
 This is Fumero’s third and final installation this summer above the 2nd ave subway stop.

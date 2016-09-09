@@ -5,7 +5,6 @@ location: 'Sydney'
 landingImage: https://tawnysaez.files.wordpress.com/2015/09/11997990_10153662121037425_168948462_n.jpg?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2015/09/11997990_10153662121037425_168948462_n.jpg?w=1000
 fullImageType: horizontal
-featuredPost: true
 date: 2016-07-28 00:00:00
 ---
 New Zealand artist Graham Hoete has two main passions; Dogs and Aerosol Art.

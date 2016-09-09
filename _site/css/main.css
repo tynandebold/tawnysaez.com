@@ -43,12 +43,42 @@ header {
     header h1 > a:hover {
       border-bottom: 1px solid #333;
       cursor: pointer; }
-  header .desc {
+  header #desc {
     display: inline-block;
     font-size: 16px;
     font-weight: 300;
     padding-left: 4px; }
-  header .about-link {
+  header .dropdown-wrapper {
+    display: inline-block; }
+    header .dropdown-wrapper .dropdown-menu,
+    header .dropdown-wrapper .dropdown-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    header .dropdown-wrapper .dropdown-menu li {
+      position: relative; }
+    header .dropdown-wrapper .dropdown-menu > li > ul {
+      background-color: #fff;
+      border-radius: 0 0 2px 2px;
+      display: none;
+      left: -5px;
+      opacity: 0.95;
+      position: absolute;
+      width: 80px;
+      z-index: 50; }
+    header .dropdown-wrapper .dropdown-menu > li > ul > li {
+      margin: 13px 5px; }
+    header .dropdown-wrapper .dropdown-menu > li > ul > li > a {
+      border-bottom: 1px solid #fff;
+      color: #333;
+      font-size: 13px;
+      padding-bottom: 2px;
+      text-decoration: none; }
+      header .dropdown-wrapper .dropdown-menu > li > ul > li > a:hover {
+        border-bottom: 1px solid #333;
+        cursor: pointer; }
+  header #dropdown-title,
+  header #about-link {
     border-bottom: 1px solid #fff;
     color: #333;
     letter-spacing: 0.5px;
@@ -58,11 +88,15 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     transition: all .2s ease-out;
-    margin-top: 18px;
-    display: block; }
-    header .about-link:hover {
+    z-index: 999; }
+    header #dropdown-title:hover,
+    header #about-link:hover {
       border-bottom: 1px solid #333;
       cursor: pointer; }
+  header #about-link {
+    margin-top: 18px;
+    margin-left: 20px;
+    display: inline-block; }
 
 /* index page shared styles */
 .section-title {
@@ -95,7 +129,7 @@ header {
 /* index page featured-section styles */
 .featured-posts-wrapper {
   display: flex;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 45px; }
@@ -145,11 +179,38 @@ header {
 /* index page all-posts styles */
 .all-posts-wrapper {
   display: flex;
-  flex: 1 0 auto;
-  flex-flow: row wrap; }
+  flex: 0 0 auto;
+  flex-flow: row wrap;
+  position: relative; }
+  .all-posts-wrapper #filter-wrapper {
+    position: absolute;
+    top: 20px;
+    right: -80px; }
+    .all-posts-wrapper #filter-wrapper #filter-title {
+      letter-spacing: 0.5px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px; }
+    .all-posts-wrapper #filter-wrapper .filter-city {
+      margin-bottom: 8px; }
+    .all-posts-wrapper #filter-wrapper .filter-city a {
+      border-bottom: 1px solid #fff;
+      color: #333;
+      font-weight: 300;
+      padding-bottom: 2px;
+      text-decoration: none;
+      transition: all .2s ease-out; }
+      .all-posts-wrapper #filter-wrapper .filter-city a:hover {
+        border-bottom: 1px solid #333;
+        cursor: pointer; }
+      .all-posts-wrapper #filter-wrapper .filter-city a.active {
+        border-bottom: 1px solid #60adaf;
+        color: #60adaf;
+        font-weight: 400; }
   .all-posts-wrapper .post {
     width: 25%;
-    height: auto;
+    height: 100%;
     position: relative;
     border: 2px solid #fff;
     display: flex;
@@ -225,6 +286,11 @@ header {
     float: right;
     margin: 15px 0 30px 30px;
     width: 70%; }
+    @media (max-width: 767px) {
+      .main-content .horizontal-img {
+        float: none;
+        margin: 0;
+        width: 100%; } }
   .main-content img {
     width: 100%; }
   .main-content .writing {
