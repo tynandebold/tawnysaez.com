@@ -116,7 +116,7 @@ header {
       width: 100%;
       display: flex;
       background-size: cover;
-      background-position: center center; }
+      background-position: top center; }
       .featured-posts-wrapper .post-wrapper .post:after {
         content: '';
         padding-top: 75%; }
