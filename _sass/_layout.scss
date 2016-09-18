@@ -17,13 +17,14 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 50px 2px 5px;
-  transition: all .3s ease-out;
 
   @include breakpoint(medium) {
     margin: 20px 2px;
   }
   @include breakpoint(small) {
+    flex-direction: column;
     margin: 20px 0;
+    text-align: center;
   }
 
   h1 {
@@ -38,7 +39,7 @@ header {
     font-size: 32px;
     font-weight: 700;
     text-decoration: none;
-    transition: all .2s ease-out;
+    transition: border .2s ease-out;
 
     &:hover {
       border-bottom: 1px solid $black;
@@ -53,6 +54,45 @@ header {
     padding-left: 4px;
   }
 
+  .share-wrapper {
+    display: inline-block;
+    padding-right: 8px;
+
+    .share {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .share li {
+      display: inline-block;
+      margin-right: 6px;
+
+      &:nth-of-type(1) {
+        margin-right: 13px;
+      }
+      &:nth-of-type(2) {
+        margin-right: 15px;
+      }
+    }
+
+    .share li a {
+      border-bottom: 1px solid $white;
+      padding-bottom: 4px;
+      transition: border .2s ease-out;
+
+      &:hover {
+        border-bottom: 1px solid $black;
+      }
+    }
+
+    .share svg {
+      height: 18px;
+      vertical-align: bottom;
+      width: 18px;
+    }
+  }
+
   #about-link {
     border-bottom: 1px solid $white;
     color: $black;
@@ -64,12 +104,16 @@ header {
     padding-bottom: 3px;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all .2s ease-out;
+    transition: border .2s ease-out;
     z-index: 999;
 
     &:hover {
       border-bottom: 1px solid $black;
       cursor: pointer;
+    }
+
+    @include breakpoint(small) {
+      margin-top: 15px;
     }
   }
 }
@@ -152,8 +196,9 @@ header {
         font-size: 16px;
         font-weight: 500;
         margin-top: 10px;
+        padding-bottom: 2px;
         text-decoration: none;
-        transition: all .2s ease-out;
+        transition: border .2s ease-out;
 
         &:hover {
           border-bottom: 1px solid $black;
@@ -246,7 +291,7 @@ header {
         font-size: 13px;
         font-weight: 300;
         padding: 2px 6px;
-        margin: 10px;
+        margin: 15px;
         background: rgba(255,255,255,.85);
       }
     }
@@ -333,7 +378,7 @@ header {
       color: #60adaf;
       padding-bottom: 2px;
       text-decoration: none;
-      transition: all .2s ease-out;
+      transition: border .2s ease-out;
 
       &:hover {
         color: #a94139;
