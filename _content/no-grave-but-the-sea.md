@@ -7,4 +7,4 @@ fullImage: https://tawnysaez.files.wordpress.com/2015/05/img_0232.png?w=1000
 fullImageType: vertical
 date: 2016-07-24 00:00:00
 ---
-Artist unknown. Location: Sydney. 
+Artist unknown.

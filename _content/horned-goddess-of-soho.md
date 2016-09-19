@@ -7,4 +7,4 @@ fullImage: https://tawnysaez.files.wordpress.com/2015/05/image.jpg?w=1000
 fullImageType: vertical
 date: 2016-07-23 00:00:00
 ---
-Artist unknown. Location: Soho, New York City.
+Artist unknown.
