@@ -31,14 +31,16 @@
 		</div>
 		{% assign items = site.content | sort: 'date' %}
 		{% for post in site.content reversed %}
-		<a href="{{post.url}}" class="post" data-city="{{post.location}}" style="background-image: url({{post.landingImage}})">
-		  <div class="post-overlay">
-				<div class="post-text">
-					<div class="title text-item">{{post.title}}</div>
-					<div class="location text-item">{{post.location}}</div>
-				</div>
-		  </div>
-		</a>
+			{% if post.featuredPost != true %}
+				<a href="{{post.url}}" class="post" data-city="{{post.location}}" style="background-image: url({{post.landingImage}})">
+				  <div class="post-overlay">
+						<div class="post-text">
+							<div class="title text-item">{{post.title}}</div>
+							<div class="location text-item">{{post.location}}</div>
+						</div>
+				  </div>
+				</a>
+			{% endif %}
 		{% endfor %}
 	</div>
 
