@@ -1,7 +1,7 @@
 body {
   max-width: 1000px;
   margin: 0 auto;
-  font-family: "Roboto", arial narrow, arial, helvetica, sans-serif;
+  font-family: 'Roboto', helvetica, sans-serif;
   font-size: 14px;
   display: flex;
   min-height: 100vh;
@@ -197,7 +197,7 @@ header {
         }
       }
 
-      .location {
+      .description {
         font-size: 12px;
         font-weight: 300;
         line-height: 17px;
@@ -206,6 +206,13 @@ header {
 
         p:first-child {
           margin-top: 6px;
+        }
+
+        a {
+          color: $black;
+          cursor: default;
+          pointer-events: none;
+          text-decoration: none;
         }
       }
     }

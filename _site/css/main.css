@@ -8,7 +8,7 @@
 body {
   max-width: 1000px;
   margin: 0 auto;
-  font-family: "Roboto", arial narrow, arial, helvetica, sans-serif;
+  font-family: 'Roboto', helvetica, sans-serif;
   font-size: 14px;
   display: flex;
   min-height: 100vh;
@@ -159,14 +159,19 @@ header {
         .featured-posts-wrapper .post-wrapper .post-text .title:hover {
           border-bottom: 1px solid #333;
           cursor: pointer; }
-      .featured-posts-wrapper .post-wrapper .post-text .location {
+      .featured-posts-wrapper .post-wrapper .post-text .description {
         font-size: 12px;
         font-weight: 300;
         line-height: 17px;
         margin: 0 auto;
         width: 80%; }
-        .featured-posts-wrapper .post-wrapper .post-text .location p:first-child {
+        .featured-posts-wrapper .post-wrapper .post-text .description p:first-child {
           margin-top: 6px; }
+        .featured-posts-wrapper .post-wrapper .post-text .description a {
+          color: #333;
+          cursor: default;
+          pointer-events: none;
+          text-decoration: none; }
 
 /* index page all-posts styles */
 .all-posts-wrapper {

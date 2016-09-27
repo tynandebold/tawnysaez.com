@@ -5,7 +5,6 @@ location: 'New York'
 landingImage: https://tawnysaez.files.wordpress.com/2016/08/img_3691.jpg?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2016/08/img_3691.jpg?w=1000
 fullImageType: horizontal
-featuredPost: true
 date: 2016-08-18 00:00:00
 ---
 ‘Pindorama’ means Land of The Palms in Tupi, signifying a place free of evil – this is actually what the natives called Brazil prior to colonization. The Tupi people were one of the largest indigenous populations in Brazil and are known for settling the Amazon rainforest. However, most of their population died by the 17th century from European colonization.
