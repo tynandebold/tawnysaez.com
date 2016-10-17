@@ -288,12 +288,17 @@ header {
       margin: 0;
       font-weight: 300;
       font-size: 16px; }
+    .main-content .writing blockquote {
+      font-size: 17px;
+      line-height: 25px; }
+    .main-content .writing h5 {
+      font-weight: 300; }
     .main-content .writing a {
       border-bottom: 1px solid #fff;
       color: #60adaf;
       padding-bottom: 2px;
       text-decoration: none;
-      transition: border .2s ease-out; }
+      transition: border .2s ease-out, color .2s ease-out; }
       .main-content .writing a:hover {
         color: #a94139;
         border-bottom: 1px solid #a94139; }

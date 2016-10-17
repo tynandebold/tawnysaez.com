@@ -5,7 +5,7 @@ location: 'Detroit'
 landingImage: https://tawnysaez.files.wordpress.com/2016/08/img_2685.jpg?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2016/08/img_2685.jpg?w=1000
 fullImageType: horizontal
-featuredPost: true
+featuredPost: false
 date: 2016-09-01 00:00:00
 ---
 Detroit’s Eastern Market is one of the oldest and largest year-round markets in America. For the past 125 years, Eastern Market has nourished Detroit with local delicacies and fresh produce, providing an inclusive, resilient, and robust regional food hub. Eastern Market is also now becoming well known for it’s unique offering of public art with it’s second annual “Murals in the Market” festival underway.
