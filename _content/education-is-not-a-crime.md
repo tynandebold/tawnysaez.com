@@ -2,7 +2,7 @@
 layout: content
 title: 'Education Is Not A Crime 2016'
 location: 'New York'
-landingImage: https://tawnysaez.files.wordpress.com/2016/10/12976094_596744940491592_158615708_n_460_square.jpg?w=400&h=300&crop=1
+landingImage: https://tawnysaez.files.wordpress.com/2016/10/12976094_596744940491592_158615708_n_460_square.jpg?w=400&h=400&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2016/10/12976094_596744940491592_158615708_n_460_square.jpg?w=1000
 fullImageType: horizontal
 featuredPost: true

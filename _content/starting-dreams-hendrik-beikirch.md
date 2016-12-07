@@ -5,7 +5,7 @@ location: 'New York'
 landingImage: https://tawnysaez.files.wordpress.com/2016/09/img_2733.jpg?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2016/09/img_2733.jpg?w=1000
 fullImageType: vertical
-featuredPost: true
+featuredPost: false
 date: 2016-09-14 00:00:00
 ---
 German artist Hendrik Beikirch, “ecb,” is known for his monochromatic murals of fictional and documentary portraits standing out amidst post industrial landscapes.  Using a photorealism technique, Beikirch depicts the mundane aspects of life and his subjects’ all express a world-weariness, grit, and cautious optimism, providing a sense of familiarity for the local passerby. His works are all deeper studies of humanity that respond to the cultural shifts in the perception of beauty brought about by the ubiquitous presence of social and traditional media.
