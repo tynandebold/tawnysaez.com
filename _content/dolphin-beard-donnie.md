@@ -4,6 +4,7 @@ title: 'Dolphin Beard Donnie'
 location: 'Sydney'
 landingImage: https://tawnysaez.files.wordpress.com/2015/05/img_0229.png?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2015/05/img_0229.png?w=1000
+facebookImage: https://tawnysaez.files.wordpress.com/2015/05/img_0229.png?w=1200&h=630&crop=1
 fullImageType: vertical
 date: 2016-07-25 00:00:00
 ---

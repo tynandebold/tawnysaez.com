@@ -4,6 +4,7 @@ title: 'Starting Dreams by Hendrik Beikirch'
 location: 'New York'
 landingImage: https://tawnysaez.files.wordpress.com/2016/09/img_2733.jpg?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2016/09/img_2733.jpg?w=1000
+facebookImage: https://tawnysaez.files.wordpress.com/2016/09/img_2733.jpg?w=1200&h=630&crop=1
 fullImageType: vertical
 featuredPost: false
 date: 2016-09-14 00:00:00

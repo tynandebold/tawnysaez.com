@@ -4,6 +4,7 @@ title: 'Lets Get Some Ladies Up Here'
 location: 'New York'
 landingImage: https://tawnysaez.files.wordpress.com/2016/12/img_0414.jpg?w=400&h=300&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2016/12/img_0414.jpg?w=1000
+facebookImage: https://tawnysaez.files.wordpress.com/2016/12/img_0414.jpg?w=1200&h=630&crop=1
 fullImageType: horizontal
 featuredPost: true
 date: 2016-12-07 00:00:00

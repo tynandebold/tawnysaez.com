@@ -9,7 +9,10 @@
 	<meta property="og:url" content="http://www.tawnysaez.com/" />
 	<meta property="og:title" content="{{site.title}}" />
 	<meta property="og:description" content="{{site.description}}" />
-	<meta property="og:image" content="https://tawnysaez.files.wordpress.com/2015/09/11997990_10153662121037425_168948462_n.jpg?w=1200&h=630&crop=1" />
-
+	{% if page.fullImage %}
+		<meta property="og:image" content="{{page.fullImage}}" />
+	{% else %}
+		<meta property="og:image" content="https://tawnysaez.files.wordpress.com/2015/09/11997990_10153662121037425_168948462_n.jpg?w=1200&h=630&crop=1" />
+	{% endif %}
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 </head>

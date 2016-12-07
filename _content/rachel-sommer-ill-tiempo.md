@@ -4,6 +4,7 @@ title: 'Rachel Sommer: Ill Tiempo'
 location: 'Melbourne'
 landingImage: https://tawnysaez.files.wordpress.com/2015/08/2015-05-30-15-45-31.jpg?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2015/08/2015-05-30-15-45-31.jpg?w=1000
+facebookImage: https://tawnysaez.files.wordpress.com/2015/08/2015-05-30-15-45-31.jpg?w=1200&h=630&crop=1
 fullImageType: horizontal
 date: 2016-07-26 00:00:00
 ---

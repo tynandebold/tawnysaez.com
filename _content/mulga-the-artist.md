@@ -4,6 +4,7 @@ title: 'Mulga The Artist & “THE BONDI GORILLA”'
 location: 'Sydney'
 landingImage: https://tawnysaez.files.wordpress.com/2015/05/img_0233.png?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2015/05/img_0233.png?w=1000
+facebookImage: https://tawnysaez.files.wordpress.com/2015/05/img_0233.png?w=1200&h=630&crop=1
 fullImageType: vertical
 date: 2016-07-24 00:00:00
 ---

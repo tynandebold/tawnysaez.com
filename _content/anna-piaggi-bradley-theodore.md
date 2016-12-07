@@ -4,6 +4,7 @@ title: 'Anna Piaggi by Bradley Theodore: Bottega Falai'
 location: New York
 landingImage: https://tawnysaez.files.wordpress.com/2016/01/img_0200.jpg?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2016/01/img_0200.jpg?w=1000
+facebookImage: https://tawnysaez.files.wordpress.com/2016/01/img_0200.jpg?w=1200&h=630&crop=1
 fullImageType: vertical
 date: 2016-07-29 00:00:00
 ---

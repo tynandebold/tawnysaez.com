@@ -4,6 +4,7 @@ title: '"Delivering Wow Mural Tour" featuring Gaia'
 location: 'New York'
 landingImage: https://tawnysaez.files.wordpress.com/2016/09/img_3540.jpg?w=500&h=500&crop=1
 fullImage: https://tawnysaez.files.wordpress.com/2016/09/img_3540.jpg?w=1000
+facebookImage: https://tawnysaez.files.wordpress.com/2016/09/img_3540.jpg?w=1200&h=630&crop=1
 fullImageType: horizontal
 featuredPost: true
 date: 2016-09-27 00:00:00
