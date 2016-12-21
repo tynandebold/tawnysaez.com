@@ -6,8 +6,7 @@
   box-sizing: border-box; }
 
 body {
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 15px;
   font-family: 'Roboto', helvetica, sans-serif;
   font-size: 14px;
   display: flex;
