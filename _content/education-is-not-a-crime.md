@@ -6,7 +6,7 @@ landingImage: https://tawnysaez.files.wordpress.com/2016/10/12976094_59674494049
 fullImage: https://tawnysaez.files.wordpress.com/2016/10/12976094_596744940491592_158615708_n_460_square.jpg?w=1000
 facebookImage: https://tawnysaez.files.wordpress.com/2016/10/12976094_596744940491592_158615708_n_460_square.jpg?w=1200&h=630&crop=1
 fullImageType: horizontal
-featuredPost: true
+featuredPost: false
 date: 2016-10-16 00:00:00
 ---
 This summer artists from all over the globe took over the streets of Harlem, New York to raise awareness about human rights and education equality. The initiative was a collaborative partnership between <a href="http://streetartanarchy.com/" target="_blank">Street Art Anarchy</a>, a New York City based start up that works with international street artists on contemporary art projects, and the human rights campaign <a href="http://www.notacrime.me/harlem-diary/2016/2/16/harlem-introduction" target="_blank">Not a Crime</a>. Together they curated over 15 murals on specific walls in Harlem that highlighted vibrant cultural and educational institutions, just in time for the United Nations General Assembly in September.
