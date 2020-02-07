@@ -1,20 +1,23 @@
 <head>
-	<meta charset="UTF-8">
-	<title>{{site.title}}</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-	<meta name="description" content="{{site.description}}">
-	<meta name="keywords" content="{{site.keywords}}">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>{{site.title}}</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="description" content="{{site.description}}" />
+  <meta name="keywords" content="{{site.keywords}}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	{% if page.url %}
-		<meta property="og:url" content="http://www.tawnysaez.com{{page.url}}" />
-	{% endif %}
-	<meta property="og:title" content="{{site.title}}" />
-	<meta property="og:description" content="{{site.description}}" />
-	{% if page.facebookImage %}
-		<meta property="og:image" content="{{page.facebookImage}}" />
-	{% else %}
-		<meta property="og:image" content="https://tawnysaez.files.wordpress.com/2015/09/11997990_10153662121037425_168948462_n.jpg?w=1200&h=630&crop=1" />
-	{% endif %}
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  {% if page.url %}
+  <meta property="og:url" content="http://www.tawnysaez.com{{page.url}}" />
+  {% endif %}
+  <meta property="og:title" content="{{site.title}}" />
+  <meta property="og:description" content="{{site.description}}" />
+  {% if page.facebookImage %}
+  <meta property="og:image" content="{{page.facebookImage}}" />
+  {% else %}
+  <meta
+    property="og:image"
+    content="https://tawnysaez.files.wordpress.com/2015/09/11997990_10153662121037425_168948462_n.jpg?w=1200&h=630&crop=1"
+  />
+  {% endif %} <link href="{{ "/css/main.css" | relative_url }}"
+  rel="stylesheet">
 </head>
