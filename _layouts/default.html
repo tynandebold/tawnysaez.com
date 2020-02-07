@@ -13,13 +13,17 @@
       site.content reversed %} {% if post.featuredPost == true %}
       <div class="post-wrapper">
         <a
-          href="{{post.url}}"
+          href="https://tynandebold.com/tawnysaez.com{{post.url}}"
           class="post"
           style="background-image: url({{post.landingImage}})"
         >
         </a>
         <div class="post-text">
-          <a href="{{post.url}}" class="title text-item">{{post.title}}</a>
+          <a
+            href="https://tynandebold.com/tawnysaez.com{{post.url}}"
+            class="title text-item"
+            >{{post.title}}</a
+          >
           <div class="description text-item">
             {{post.content | truncatewords:20}}
           </div>
@@ -36,7 +40,7 @@
       {% assign items = site.content | sort: 'date' %} {% for post in
       site.content reversed %} {% if post.featuredPost != true %}
       <a
-        href="{{post.url}}"
+        href="https://tynandebold.com/tawnysaez.com{{post.url}}"
         class="post"
         data-city="{{post.location}}"
         style="background-image: url({{post.landingImage}})"
